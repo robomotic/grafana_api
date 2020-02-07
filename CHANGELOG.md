@@ -1,4 +1,12 @@
-# Changelog
+# CHANGELOG
+
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/m0nhawk/grafana_api/compare/1.0.0...1.0.1) (2020-02-07)
+
+### Features
+
+* new release pipeline (ae1bad3)
+
 
 <a name="1.0.0"></a>
 ## [1.0.0](https://github.com/m0nhawk/grafana_api/compare/0.9.3...1.0.0) (2020-02-07)
