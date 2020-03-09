@@ -63,7 +63,8 @@ class Annotations(Base):
             self,
             time_from=None,
             time_to=None,
-            is_region=True,
+            dashboardId=None,
+            panelId=None,
             tags=[],
             text=None,
     ):
@@ -80,12 +81,13 @@ class Annotations(Base):
         payload = {
             "time": time_from,
             "timeEnd": time_to,
-            "isRegion": bool(is_region),
             "tags": tags,
             "text": text
-
         }
 
+        if dashboardId:
+            payload['dashboardId'] = dashboardId
+            
         r = self.api.POST(annotations_path, json=payload)
 
         return r
